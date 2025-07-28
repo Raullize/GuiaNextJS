@@ -1,8 +1,8 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=180&section=header&text=GuiaNext&fontSize=30&fontColor=fff&animation=twinkling&fontAlignY=35"/>
 
-# 🚀 GuiaNext ✨
+# 🚀 GuiaNextJS ✨
 
-Bem-vindo ao **GuiaNext**! ✌️ Este guia tem como objetivo oferecer uma introdução abrangente ao Next.js para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam aprofundar seus conhecimentos neste poderoso framework. Aqui você encontrará conceitos, exemplos práticos e dicas úteis para dominar o Next.js. Vamos lá! 🚀
+Bem-vindo ao **GuiaNextJS**! ✌️ Este guia tem como objetivo oferecer uma introdução abrangente ao Next.js para iniciantes e até mesmo para aqueles que já possuem experiência intermediária e desejam aprofundar seus conhecimentos neste poderoso framework. Aqui você encontrará conceitos, exemplos práticos e dicas úteis para dominar o Next.js. Vamos lá! 🚀
 
 ## 📚 Conteúdo 📋
 
