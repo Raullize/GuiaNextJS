@@ -4,16 +4,53 @@
 
 O Next.js se destaca pela sua abordagem flexível à renderização, oferecendo múltiplas estratégias para otimizar o desempenho, SEO e experiência do usuário. Neste guia, vamos explorar as diferentes formas de renderização e como buscar dados em cada uma delas.
 
+## 🚫 Limitações das SPAs Tradicionais
+
+Antes de explorarmos as soluções do Next.js, é importante entender os desafios das **Single Page Applications (SPAs)** tradicionais:
+
+### Problemas Comuns das SPAs:
+
+1. **🔍 SEO Prejudicado**: 
+   - Conteúdo renderizado apenas no cliente
+   - Mecanismos de busca podem não indexar adequadamente
+   - Meta tags dinâmicas são difíceis de implementar
+
+2. **⏱️ Tempo de Carregamento Inicial Lento**:
+   - Todo o bundle JavaScript deve ser baixado antes da primeira renderização
+   - Usuários veem uma tela em branco por mais tempo
+   - Experiência ruim em conexões lentas
+
+3. **📱 Performance Inconsistente**:
+   - Dispositivos menos potentes sofrem com renderização pesada no cliente
+   - Bateria dos dispositivos móveis é drenada mais rapidamente
+   - Experiência degradada em hardware limitado
+
+4. **♿ Problemas de Acessibilidade**:
+   - Leitores de tela podem ter dificuldade com conteúdo dinâmico
+   - Navegação por teclado pode ser comprometida
+   - Falta de progressive enhancement
+
+## ✅ Como o Next.js Resolve Esses Problemas
+
+O Next.js oferece **múltiplas estratégias de renderização** que resolvem essas limitações:
+
 ## 📋 Estratégias de Renderização
 
 O Next.js oferece quatro principais estratégias de renderização:
 
 1. **Server-Side Rendering (SSR)**: Renderização no servidor a cada requisição
+   - ✅ **Resolve**: SEO, tempo de carregamento inicial, acessibilidade
+   
 2. **Static Site Generation (SSG)**: Renderização durante o build
+   - ✅ **Resolve**: Performance máxima, SEO perfeito, experiência consistente
+   
 3. **Incremental Static Regeneration (ISR)**: Atualização de páginas estáticas em intervalos
+   - ✅ **Resolve**: Equilibra performance estática com conteúdo dinâmico
+   
 4. **Client-Side Rendering (CSR)**: Renderização no navegador do usuário
+   - ✅ **Usado estrategicamente**: Para conteúdo altamente interativo e personalizado
 
-Cada estratégia tem casos de uso específicos, e o Next.js permite misturá-las na mesma aplicação.
+Cada estratégia tem casos de uso específicos, e o Next.js permite **misturá-las na mesma aplicação** para obter o melhor resultado possível.
 
 ## 🌐 Server-Side Rendering (SSR)
 
@@ -513,4 +550,4 @@ async function getProduto(id) {
 
 [🔙 Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

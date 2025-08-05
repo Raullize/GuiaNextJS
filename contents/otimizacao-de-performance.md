@@ -15,6 +15,81 @@ Uma aplicação rápida proporciona:
 
 O Next.js foi projetado com performance em mente, oferecendo otimizações automáticas e ferramentas para alcançar excelentes métricas de desempenho.
 
+## 🚫 Problemas de Performance em SPAs Tradicionais
+
+As **Single Page Applications (SPAs)** convencionais enfrentam diversos desafios de performance:
+
+### Principais Limitações:
+
+1. **📦 Bundle Size Gigante**:
+   - Todo o JavaScript da aplicação é baixado na primeira visita
+   - Bibliotecas e dependências são carregadas mesmo se não utilizadas
+   - Tempo de carregamento inicial extremamente lento
+   - Experiência ruim em conexões lentas
+
+2. **⏱️ Time to Interactive (TTI) Alto**:
+   - Usuários precisam esperar todo o JavaScript ser baixado e executado
+   - Tela em branco por longos períodos
+   - Frustração do usuário e alta taxa de abandono
+
+3. **🔄 Renderização Bloqueante**:
+   - JavaScript bloqueia a renderização inicial
+   - Conteúdo só aparece após execução completa do JS
+   - Dispositivos lentos sofrem ainda mais
+
+4. **📱 Consumo Excessivo de Recursos**:
+   - Processamento intensivo no dispositivo do usuário
+   - Drenagem rápida da bateria em dispositivos móveis
+   - Experiência degradada em hardware limitado
+
+5. **🌐 Problemas de Cache**:
+   - Dificuldade em implementar estratégias de cache eficientes
+   - Invalidação de cache complexa
+   - Recursos não são reutilizados adequadamente
+
+## ✅ Como o Next.js Resolve os Problemas de Performance
+
+O Next.js implementa **otimizações automáticas** que resolvem sistematicamente os problemas de SPAs:
+
+### Soluções Integradas:
+
+1. **📦 Code Splitting Automático**:
+   - Cada página se torna um bundle separado
+   - Apenas o código necessário é carregado
+   - Redução drástica do tempo de carregamento inicial
+   - Carregamento sob demanda de funcionalidades
+
+2. **⚡ Server-Side Rendering (SSR)**:
+   - HTML é gerado no servidor
+   - Conteúdo visível imediatamente
+   - JavaScript é hidratado progressivamente
+   - Time to First Byte (TTFB) otimizado
+
+3. **🏗️ Static Site Generation (SSG)**:
+   - Páginas pré-renderizadas durante o build
+   - Performance máxima possível
+   - Servidas via CDN globalmente
+   - Zero tempo de processamento no servidor
+
+4. **🔄 Incremental Static Regeneration (ISR)**:
+   - Combina velocidade estática com conteúdo dinâmico
+   - Regeneração automática em background
+   - Cache inteligente e invalidação eficiente
+
+5. **🖼️ Otimização de Imagens Automática**:
+   - Lazy loading nativo
+   - Conversão automática para WebP/AVIF
+   - Responsive images automáticas
+   - Prevenção de Cumulative Layout Shift (CLS)
+
+6. **🔗 Prefetching Inteligente**:
+   - Links visíveis são pré-carregados automaticamente
+   - Navegação instantânea entre páginas
+   - Estratégias de prefetch configuráveis
+
+### Resultado:
+**O Next.js transforma uma SPA lenta em uma aplicação ultra-rápida**, mantendo todos os benefícios de interatividade enquanto resolve os problemas fundamentais de performance.
+
 ## 🔄 Core Web Vitals e Métricas de Performance
 
 O Google utiliza as Core Web Vitals como métricas importantes para avaliar a experiência do usuário:
@@ -701,4 +776,4 @@ export function useNetworkStatus() {
 
 [🔙 Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>
