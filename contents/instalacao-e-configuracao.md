@@ -1,17 +1,17 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=header"/>
 
-# 📂 Instalação e Configuração do Next.js 📝
+# Instalação e Configuração do Next.js
 
 Neste guia, vamos aprender como configurar um novo projeto Next.js do zero. O Next.js oferece uma configuração simples e direta para começar a desenvolver aplicações web modernas.
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, você precisa ter instalado em sua máquina:
 
 - [Node.js](https://nodejs.org/) (versão 16.14 ou superior)
 - [npm](https://www.npmjs.com/) (vem com Node.js) ou [Yarn](https://yarnpkg.com/) ou [pnpm](https://pnpm.io/)
 
-## 🚀 Criando um Novo Projeto
+## Criando um Novo Projeto
 
 ### Usando `create-next-app` (Recomendado)
 
@@ -77,7 +77,7 @@ Se preferir configurar manualmente, siga estes passos:
    mkdir app
    ```
 
-## 🏃‍♂️ Iniciando o Servidor de Desenvolvimento
+## Iniciando o Servidor de Desenvolvimento
 
 Após a instalação, navegue até a pasta do projeto e inicie o servidor de desenvolvimento:
 
@@ -95,7 +95,7 @@ pnpm dev
 
 Acesse `http://localhost:3000` no seu navegador para ver seu novo projeto Next.js funcionando!
 
-## 📁 Estrutura Básica de um Projeto Next.js
+## Estrutura Básica de um Projeto Next.js
 
 Após a criação do projeto, você terá uma estrutura semelhante a esta:
 
@@ -118,7 +118,7 @@ meu-projeto-nextjs/
   └── README.md        # Documentação
 ```
 
-## ⚙️ Configuração Personalizada
+## Configuração Personalizada
 
 O Next.js pode ser configurado através do arquivo `next.config.js` na raiz do seu projeto:
 
@@ -135,7 +135,7 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
-## 🔌 Plugins e Módulos Úteis
+## Plugins e Módulos Úteis
 
 Você pode estender seu projeto Next.js com plugins populares:
 
@@ -146,14 +146,14 @@ Você pode estender seu projeto Next.js com plugins populares:
 - **Autenticação**: NextAuth.js, Auth.js
 - **CMS**: Contentful, Sanity, Strapi
 
-## 🧠 Dicas para Desenvolvimento
+## Dicas para Desenvolvimento
 
 - Use o modo de desenvolvimento (`npm run dev`) para hot reloading
 - Atualize regularmente suas dependências do Next.js para obter as últimas melhorias
 - Explore os exemplos oficiais do Next.js para casos de uso específicos
 - Use TypeScript para obter mais segurança e autocompletar no código
 
-## 🚀 Próximos Passos
+## Próximos Passos
 
 Agora que você configurou seu projeto Next.js, é hora de começar a desenvolver!
 
@@ -163,6 +163,6 @@ Agora que você configurou seu projeto Next.js, é hora de começar a desenvolve
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=61DAFB&height=120&section=footer"/>

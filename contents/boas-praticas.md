@@ -1,40 +1,40 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🏆 Boas Práticas em Next.js 📋
+# Boas Práticas em Next.js
 
 O Next.js oferece diversas ferramentas e recursos para construir aplicações web modernas. Para aproveitar ao máximo esse framework, é importante seguir boas práticas de desenvolvimento. Este guia reúne recomendações e padrões que ajudarão você a construir aplicações Next.js mais eficientes, escaláveis e de fácil manutenção.
 
-## 🚫 Problemas de Boas Práticas em SPAs Tradicionais
+## Problemas de Boas Práticas em SPAs Tradicionais
 
 As **Single Page Applications (SPAs)** convencionais frequentemente enfrentam desafios relacionados à falta de padrões estabelecidos:
 
 ### Limitações Comuns:
 
-1. **🏗️ Arquitetura Inconsistente**:
+1. **Arquitetura Inconsistente**:
    - **Estrutura de pastas variável**: Cada projeto organizado diferentemente
    - **Padrões não estabelecidos**: Falta de convenções para componentes e estado
    - **Escalabilidade problemática**: Dificuldade para crescer o projeto
    - **Onboarding lento**: Novos desenvolvedores demoram para entender a estrutura
 
-2. **⚡ Performance Não Otimizada**:
+2. **Performance Não Otimizada**:
    - **Bundle splitting manual**: Code splitting configurado manualmente
    - **Lazy loading complexo**: Implementação manual de carregamento sob demanda
    - **Otimizações esquecidas**: Imagens, fonts e scripts não otimizados
    - **Core Web Vitals ignorados**: Métricas de performance não monitoradas
 
-3. **🔍 SEO Negligenciado**:
+3. **SEO Negligenciado**:
    - **Meta tags estáticas**: Mesmo título/descrição para todas as páginas
    - **Structured data ausente**: Falta de dados estruturados para crawlers
    - **Sitemap manual**: XML sitemaps criados e mantidos manualmente
    - **Open Graph básico**: Compartilhamento social não otimizado
 
-4. **🛡️ Segurança Reativa**:
+4. **Segurança Reativa**:
    - **Headers de segurança manuais**: CSP, HSTS configurados separadamente
    - **Sanitização inconsistente**: XSS e outras vulnerabilidades
    - **Secrets expostos**: Chaves de API no frontend
    - **CORS problemático**: Configuração complexa entre frontend/backend
 
-5. **🧪 Testes Fragmentados**:
+5. **Testes Fragmentados**:
    - **Estratégias inconsistentes**: Unit, integration, e2e sem padrão
    - **Mocking complexo**: APIs e dependências mockadas manualmente
    - **Coverage baixo**: Cobertura de testes não monitorada
@@ -46,37 +46,37 @@ O Next.js estabelece **padrões e convenções que resolvem problemas comuns** d
 
 ### Benefícios Principais:
 
-1. **🏗️ Arquitetura Padronizada**:
+1. **Arquitetura Padronizada**:
    - **File-based routing**: Estrutura de pastas = estrutura de rotas
    - **Convenções estabelecidas**: Padrões claros para componentes, páginas, APIs
    - **Colocation**: Componentes, estilos e testes próximos
    - **Escalabilidade built-in**: Estrutura que cresce naturalmente
 
-2. **⚡ Performance por Padrão**:
+2. **Performance por Padrão**:
    - **Otimizações automáticas**: Code splitting, tree shaking, minificação
    - **Image optimization**: Componente `<Image>` com lazy loading e formatos modernos
    - **Font optimization**: Google Fonts otimizadas automaticamente
    - **Script optimization**: Third-party scripts carregados eficientemente
 
-3. **🔍 SEO Integrado**:
+3. **SEO Integrado**:
    - **Metadata API**: Meta tags dinâmicas por página
    - **Structured data**: JSON-LD e microdata automáticos
    - **Sitemap generation**: XML sitemaps gerados automaticamente
    - **Open Graph otimizado**: Compartilhamento social rico
 
-4. **🛡️ Segurança por Design**:
+4. **Segurança por Design**:
    - **Headers automáticos**: CSP, HSTS, X-Frame-Options configurados
    - **API Routes seguras**: Endpoints privados por padrão
    - **Environment variables**: Secrets seguros no servidor
    - **CSRF protection**: Proteção automática contra ataques
 
-5. **🧪 Testing Framework**:
+5. **Testing Framework**:
    - **Jest integrado**: Configuração zero para unit tests
    - **Testing Library**: Testes de componentes padronizados
    - **Playwright/Cypress**: E2E testing com exemplos
    - **Coverage reports**: Relatórios de cobertura automáticos
 
-6. **🔧 Developer Experience**:
+6. **Developer Experience**:
    - **TypeScript first-class**: Suporte nativo e configuração automática
    - **ESLint rules**: Regras específicas para Next.js
    - **Hot reload**: Mudanças refletem instantaneamente
@@ -85,7 +85,7 @@ O Next.js estabelece **padrões e convenções que resolvem problemas comuns** d
 ### Resultado:
 **As boas práticas do Next.js transformam desenvolvimento web de um processo ad-hoc em uma experiência estruturada e otimizada**, garantindo qualidade, performance e manutenibilidade desde o primeiro dia.
 
-## 📋 Organização do Código
+## Organização do Código
 
 ### Estrutura de Arquivos
 
@@ -116,7 +116,7 @@ Seguir convenções consistentes facilita o entendimento do código:
 - **Constantes**: Use UPPER_SNAKE_CASE (ex: `API_ENDPOINTS.js`)
 - **Hooks**: Use o prefixo "use" (ex: `useLocalStorage.js`)
 
-## 🔄 Gerenciamento de Estado
+## Gerenciamento de Estado
 
 ### Estado Local vs. Global
 
@@ -154,7 +154,7 @@ export function useTheme() {
 }
 ```
 
-## 🚀 Otimização de Performance
+## Otimização de Performance
 
 ### Lazy Loading e Code Splitting
 
@@ -206,7 +206,7 @@ import Link from 'next/link';
 <Link href="/termos-de-uso" prefetch={false}>Termos de Uso</Link>
 ```
 
-## 🧩 Componentes
+## Componentes
 
 ### Componentização Eficiente
 
@@ -253,7 +253,7 @@ export default function Counter() {
 }
 ```
 
-## 📱 Responsividade e Acessibilidade
+## Responsividade e Acessibilidade
 
 ### Design Responsivo
 
@@ -308,7 +308,7 @@ function SearchForm() {
 }
 ```
 
-## 🔒 Segurança
+## Segurança
 
 ### Validação de Entrada
 
@@ -346,7 +346,7 @@ Implemente proteções contra:
 - **CSRF** - Utilize tokens anti-CSRF em formulários
 - **Injection** - Use prepared statements ou ORMs para consultas ao banco de dados
 
-## 🌐 Internacionalização e Localização
+## Internacionalização e Localização
 
 ### Estrutura para Múltiplos Idiomas
 
@@ -383,7 +383,7 @@ function ProductPage() {
 }
 ```
 
-## 🧪 Testes
+## Testes
 
 ### Estratégia de Testes
 
@@ -406,7 +406,7 @@ describe('Button Component', () => {
 });
 ```
 
-## 🚢 CI/CD e Deployment
+## CI/CD e Deployment
 
 ### Automação de Pipeline
 
@@ -444,7 +444,7 @@ Implemente ambientes de desenvolvimento, staging e produção:
 - **Staging** para testes finais
 - **Produção** com estratégia de rollout controlado
 
-## 🔍 SEO e Analytics
+## SEO e Analytics
 
 ### Metadados Dinâmicos
 
@@ -497,7 +497,7 @@ export function Analytics() {
 }
 ```
 
-## 📱 Experiência de Desenvolvimento
+## Experiência de Desenvolvimento
 
 ### Ferramentas Recomendadas
 
@@ -517,7 +517,7 @@ Mantenha documentação atualizada:
 - Storybook para componentes visuais
 - Arquivos CHANGELOG para registrar mudanças
 
-## 🧠 Aprendizado Contínuo
+## Aprendizado Contínuo
 
 ### Acompanhe as Novidades
 
@@ -534,7 +534,7 @@ Crie projetos paralelos para experimentar novas funcionalidades:
 - Parallel Routes
 - Intercepting Routes
 
-## 🔥 Solução de Problemas Comuns
+## Solução de Problemas Comuns
 
 ### Debugging Eficiente
 
@@ -551,7 +551,7 @@ Crie projetos paralelos para experimentar novas funcionalidades:
 - Monitore o tamanho do bundle com ferramentas como `@next/bundle-analyzer`
 - Identifique e corrija problemas de performance com Lighthouse
 
-## 🔍 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial do Next.js](https://nextjs.org/docs)
 - [Exemplos oficiais](https://github.com/vercel/next.js/tree/canary/examples)
@@ -561,6 +561,6 @@ Crie projetos paralelos para experimentar novas funcionalidades:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

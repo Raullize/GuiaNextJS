@@ -1,8 +1,8 @@
-# 🔌 Hooks Específicos do Next.js 🎣
+# Hooks Específicos do Next.js
 
 O Next.js oferece uma série de hooks específicos que simplificam o desenvolvimento e permitem acessar facilmente funcionalidades importantes do framework. Estes hooks são projetados para resolver problemas comuns de forma elegante e eficiente.
 
-## 🧭 useRouter
+## useRouter
 
 O hook `useRouter` é um dos mais utilizados no Next.js, permitindo acessar o objeto router com informações sobre a rota atual, navegação programática e manipulação de parâmetros.
 
@@ -36,7 +36,7 @@ function MinhaComponente() {
 
 ### Principais propriedades e métodos
 
-#### 🔄 No Pages Router:
+#### No Pages Router:
 
 - `router.pathname`: Caminho atual da rota
 - `router.query`: Objeto com parâmetros da URL
@@ -48,7 +48,7 @@ function MinhaComponente() {
 - `router.prefetch(url)`: Pré-carrega a página para navegação mais rápida
 - `router.events`: Para ouvir eventos do router
 
-#### ⚡ No App Router:
+#### No App Router:
 
 - `router.push(url, options)`: Navega para a URL especificada
 - `router.replace(url, options)`: Navega sem adicionar ao histórico
@@ -81,7 +81,7 @@ export default function ProdutoDetalhe() {
 }
 ```
 
-## 🔁 usePathname, useSearchParams e useParams
+## usePathname, useSearchParams e useParams
 
 No App Router, o Next.js divide as funcionalidades do router em hooks mais específicos:
 
@@ -138,7 +138,7 @@ export default function ProdutoDetalhe() {
 }
 ```
 
-## 📶 useSWR
+## useSWR
 
 Embora não seja exclusivo do Next.js, o hook `useSWR` é altamente recomendado para data fetching no lado do cliente:
 
@@ -164,13 +164,13 @@ function Perfil() {
 ```
 
 ### Vantagens do SWR:
-- 🔄 Atualização automática dos dados
-- 🚀 Cache e deduplicação automáticos
-- 📱 Foco na experiência do usuário (revalidação ao focar a janela)
-- 🔌 Recuperação inteligente após desconexão
-- 📊 Suporte a paginação e rolagem infinita
+- Atualização automática dos dados
+- Cache e deduplicação automáticos
+- Foco na experiência do usuário (revalidação ao focar a janela)
+- Recuperação inteligente após desconexão
+- Suporte a paginação e rolagem infinita
 
-## 🔄 useTransition
+## useTransition
 
 Com a introdução do React 18 e Server Components, o hook `useTransition` se torna útil para melhorar a responsividade da UI:
 
@@ -203,7 +203,7 @@ export default function Configuracoes() {
 }
 ```
 
-## 🏠 useSelectedLayoutSegment e useSelectedLayoutSegments
+## useSelectedLayoutSegment e useSelectedLayoutSegments
 
 Estes hooks permitem acessar o segmento de rota ativo dentro de um layout:
 
@@ -234,7 +234,7 @@ export default function NavBar() {
 }
 ```
 
-## 🔐 useSession (NextAuth.js)
+## useSession (NextAuth.js)
 
 Um hook para gerenciar autenticação com NextAuth.js:
 
@@ -260,7 +260,7 @@ export default function Header() {
 }
 ```
 
-## 🖼️ useFormStatus e useFormState
+## useFormStatus e useFormState
 
 Hooks para trabalhar com formulários e Server Actions:
 
@@ -303,7 +303,7 @@ function ClientForm() {
 }
 ```
 
-## 📱 useMediaQuery (Personalizado)
+## useMediaQuery (Personalizado)
 
 Um hook personalizado útil para layouts responsivos:
 
@@ -346,7 +346,7 @@ function ComponenteResponsivo() {
 }
 ```
 
-## 📄 usePagination (Personalizado)
+## usePagination (Personalizado)
 
 Hook para gerenciar paginação:
 
@@ -393,24 +393,24 @@ function usePagination(totalItems, itemsPerPage = 10, initialPage = 1) {
 }
 ```
 
-## 🔌 Boas Práticas para Uso de Hooks
+## Boas Práticas para Uso de Hooks
 
 1. ⚠️ **Regras dos Hooks**: Siga sempre as regras básicas dos hooks React:
    - Chame hooks apenas no nível superior do componente
    - Chame hooks apenas de componentes React ou hooks personalizados
 
-2. 🔄 **Memorização**: Use `useMemo` e `useCallback` para otimizar performance quando necessário
+2. **Memorização**: Use `useMemo` e `useCallback` para otimizar performance quando necessário
 
-3. 🧩 **Componentização**: Extraia lógica complexa para hooks personalizados reutilizáveis
+3. **Componentização**: Extraia lógica complexa para hooks personalizados reutilizáveis
 
-4. 🚀 **Renderização Condicional**: Em App Router, lembre-se de adicionar a diretiva 'use client' para componentes que usam hooks
+4. **Renderização Condicional**: Em App Router, lembre-se de adicionar a diretiva 'use client' para componentes que usam hooks
 
-5. 📱 **Hidratação**: Tenha cuidado com hooks que dependem do DOM no processo de hidratação (use `useEffect` para inicializações do lado do cliente)
+5. **Hidratação**: Tenha cuidado com hooks que dependem do DOM no processo de hidratação (use `useEffect` para inicializações do lado do cliente)
 
-## 📚 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial do Next.js - useRouter (App)](https://nextjs.org/docs/app/api-reference/functions/use-router)
 - [Documentação oficial do Next.js - useRouter (Pages)](https://nextjs.org/docs/pages/api-reference/functions/use-router)
 - [Documentação do SWR](https://swr.vercel.app/)
 - [React Server Components e Hooks](https://react.dev/reference/react/hooks)
-- [NextAuth.js](https://next-auth.js.org/) 
+- [NextAuth.js](https://next-auth.js.org/)

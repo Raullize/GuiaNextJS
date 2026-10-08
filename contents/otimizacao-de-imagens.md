@@ -1,40 +1,40 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 📱 Otimização de Imagens no Next.js 🖼️
+# Otimização de Imagens no Next.js
 
 A otimização de imagens é um aspecto crítico para o desempenho de aplicações web modernas. O Next.js oferece ferramentas poderosas para automatizar esse processo, garantindo que suas imagens sejam carregadas de forma eficiente e responsiva. Neste guia, vamos explorar como utilizar essas ferramentas para melhorar significativamente a experiência do usuário.
 
-## 🚫 Problemas de Imagens em SPAs Tradicionais
+## Problemas de Imagens em SPAs Tradicionais
 
 As **Single Page Applications (SPAs)** convencionais enfrentam diversos desafios relacionados ao gerenciamento de imagens:
 
 ### Limitações Comuns:
 
-1. **📦 Otimização Manual**:
+1. **Otimização Manual**:
    - **Formatos antigos**: JPEG, PNG sem conversão automática para WebP/AVIF
    - **Tamanhos fixos**: Uma imagem para todos os dispositivos
    - **Compressão manual**: Ferramentas externas para otimizar imagens
    - **Build time**: Processamento de imagens durante o build
 
-2. **⚡ Performance Problemática**:
+2. **Performance Problemática**:
    - **Sem lazy loading**: Todas as imagens carregadas imediatamente
    - **CLS (Cumulative Layout Shift)**: Layout "pula" quando imagens carregam
    - **Bandwidth waste**: Imagens grandes em dispositivos pequenos
    - **Blocking rendering**: Imagens bloqueiam renderização da página
 
-3. **📱 Responsividade Limitada**:
+3. **Responsividade Limitada**:
    - **Breakpoints manuais**: Media queries para diferentes tamanhos
    - **Art direction**: Diferentes crops para mobile/desktop complexos
    - **Density handling**: Retina/high-DPI displays não otimizados
    - **Viewport units**: Imagens não se adaptam dinamicamente
 
-4. **🌐 CDN e Caching**:
+4. **CDN e Caching**:
    - **CDN manual**: Configuração de CDN para imagens separadamente
    - **Cache headers**: Headers de cache configurados manualmente
    - **Invalidation**: Cache busting manual para novas versões
    - **Edge optimization**: Sem processamento nas edge locations
 
-5. **🔧 Developer Experience**:
+5. **Developer Experience**:
    - **Import complexo**: Webpack loaders para diferentes formatos
    - **Path management**: Caminhos relativos e absolutos confusos
    - **Hot reload**: Mudanças em imagens não refletem automaticamente
@@ -46,37 +46,37 @@ O Next.js revoluciona o gerenciamento de imagens com **otimizações automática
 
 ### Benefícios Principais:
 
-1. **🚀 Otimização Automática**:
+1. **Otimização Automática**:
    - **Formatos modernos**: Conversão automática para WebP, AVIF
    - **Compressão inteligente**: Qualidade otimizada por tipo de imagem
    - **Responsive images**: Múltiplos tamanhos gerados automaticamente
    - **On-demand processing**: Imagens processadas quando solicitadas
 
-2. **⚡ Performance Superior**:
+2. **Performance Superior**:
    - **Lazy loading nativo**: Carregamento apenas quando visível
    - **CLS prevention**: Espaço reservado previne layout shift
    - **Priority loading**: Imagens above-the-fold carregadas primeiro
    - **Preload hints**: Resource hints automáticos para navegadores
 
-3. **📱 Responsividade Inteligente**:
+3. **Responsividade Inteligente**:
    - **Device-aware**: Tamanho correto para cada dispositivo
    - **Density optimization**: Suporte automático para telas Retina
    - **Art direction**: Diferentes crops com `fill` e `object-fit`
    - **Viewport adaptation**: Imagens se adaptam ao container
 
-4. **🌐 CDN e Edge Optimization**:
+4. **CDN e Edge Optimization**:
    - **Edge processing**: Imagens processadas nas edge locations
    - **Global CDN**: Distribuição automática via Vercel/outros CDNs
    - **Smart caching**: Cache otimizado por formato e tamanho
    - **Bandwidth saving**: Até 67% menos dados transferidos
 
-5. **🛠️ Developer Experience**:
+5. **Developer Experience**:
    - **Import simples**: `import img from './image.jpg'` funciona nativamente
    - **TypeScript support**: Tipos automáticos para propriedades
    - **Hot reload**: Mudanças refletem instantaneamente
    - **Error handling**: Fallbacks automáticos para imagens quebradas
 
-6. **📊 Monitoring e Analytics**:
+6. **Monitoring e Analytics**:
    - **Core Web Vitals**: LCP otimizado automaticamente
    - **Bundle analysis**: Impacto de imagens no bundle size
    - **Performance insights**: Métricas de carregamento de imagens
@@ -85,7 +85,7 @@ O Next.js revoluciona o gerenciamento de imagens com **otimizações automática
 ### Resultado:
 **O componente Image do Next.js transforma otimização de imagens de um processo manual e propenso a erros em uma solução automática e inteligente**, oferecendo performance superior com zero configuração.
 
-## 📋 O Componente Image do Next.js
+## O Componente Image do Next.js
 
 O Next.js fornece um componente `Image` otimizado que estende a tag HTML `<img>` tradicional com recursos avançados:
 
@@ -137,7 +137,7 @@ export default function Produto() {
 }
 ```
 
-## 🛠️ Configurações Avançadas
+## Configurações Avançadas
 
 ### Imagens Responsivas
 
@@ -218,7 +218,7 @@ import produtoImagem from '@/public/images/produto.jpg';
 />
 ```
 
-## 🌐 Imagens de Domínios Externos
+## Imagens de Domínios Externos
 
 Para utilizar imagens de origens externas, você precisa configurar os domínios permitidos no `next.config.js`:
 
@@ -266,7 +266,7 @@ const nextConfig = {
 module.exports = nextConfig;
 ```
 
-## 🔄 Carregamento sob Demanda
+## Carregamento sob Demanda
 
 ### Prioridade
 
@@ -296,7 +296,7 @@ O comportamento padrão é lazy load, mas você pode controlá-lo:
 />
 ```
 
-## 📊 Otimização para Imagens Dinâmicas
+## Otimização para Imagens Dinâmicas
 
 ### Usando Imagens de CMS ou API
 
@@ -362,7 +362,7 @@ export default function MeuComponente() {
 }
 ```
 
-## 🖼️ Galerias e Carrosséis de Imagens
+## Galerias e Carrosséis de Imagens
 
 Para galerias ou carrosséis, combine o componente Image com bibliotecas como Swiper ou react-slick:
 
@@ -398,7 +398,7 @@ export default function GaleriaProduto({ imagens }) {
 }
 ```
 
-## 🎭 Efeitos e Transformações
+## Efeitos e Transformações
 
 ### Imagens com Hover Effects
 
@@ -446,7 +446,7 @@ export default function ImagemInterativa({ src, alt }) {
 />
 ```
 
-## 📱 Imagens em Diferentes Resoluções
+## Imagens em Diferentes Resoluções
 
 ### Art Direction com Picture
 
@@ -490,7 +490,7 @@ export default function ResponsiveHero() {
 }
 ```
 
-## 🧩 Integrações Populares
+## Integrações Populares
 
 ### Cloudinary
 
@@ -539,7 +539,7 @@ export default function PostContentful({ post }) {
 }
 ```
 
-## 🧠 Melhores Práticas
+## Melhores Práticas
 
 1. **Sempre defina width e height**: Previne Cumulative Layout Shift (CLS)
 2. **Use `fill` para imagens que devem se adaptar ao container**: Combine com `position: relative` no container
@@ -550,7 +550,7 @@ export default function PostContentful({ post }) {
 7. **Não desative a otimização**: A menos que realmente necessário
 8. **Use SVGO para otimizar SVGs**: Reduz o tamanho dos arquivos SVG
 
-## 🔍 Solução de Problemas Comuns
+## Solução de Problemas Comuns
 
 ### Imagens não aparecem
 
@@ -574,7 +574,7 @@ Solução:
 - Use `objectFit: 'cover'` para cobrir o container sem distorção
 - Use aspect ratio no container para manter a proporção correta
 
-## 🔗 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial do Next.js Image](https://nextjs.org/docs/app/building-your-application/optimizing/images)
 - [API Reference do componente Image](https://nextjs.org/docs/app/api-reference/components/image)
@@ -582,6 +582,6 @@ Solução:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

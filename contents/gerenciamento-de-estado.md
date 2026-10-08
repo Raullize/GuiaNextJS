@@ -1,8 +1,8 @@
-# 🔄 Gerenciamento de Estado no Next.js
+# Gerenciamento de Estado no Next.js
 
 O gerenciamento de estado é uma parte crucial no desenvolvimento de aplicações modernas em React e Next.js. Neste guia, exploraremos as melhores abordagens para gerenciar o estado em diferentes níveis de complexidade em suas aplicações Next.js.
 
-## 📊 Tipos de Estado em Aplicações Next.js
+## Tipos de Estado em Aplicações Next.js
 
 1. **Estado Local** - Gerenciado pelo hook `useState` para componentes individuais
 2. **Estado Global** - Compartilhado entre múltiplos componentes usando Context API ou bibliotecas especializadas
@@ -10,7 +10,7 @@ O gerenciamento de estado é uma parte crucial no desenvolvimento de aplicaçõe
 4. **Estado da URL** - Informações armazenadas na própria URL
 5. **Estado Persistente** - Dados armazenados entre sessões (localStorage, cookies)
 
-## 🧩 Estado Local com Hooks React
+## Estado Local com Hooks React
 
 Para estados simples dentro de um componente, o hook `useState` é a solução mais elegante:
 
@@ -93,7 +93,7 @@ export default function Carrinho() {
 }
 ```
 
-## 🌐 Estado Global com Context API
+## Estado Global com Context API
 
 A Context API do React é uma solução nativa para compartilhar estado entre componentes:
 
@@ -168,7 +168,7 @@ export default function ThemeSwitcher() {
 }
 ```
 
-## 📦 Gerenciamento de Estado com Zustand
+## Gerenciamento de Estado com Zustand
 
 Zustand é uma biblioteca leve e simples para gerenciamento de estado:
 
@@ -231,7 +231,7 @@ export default function ContadorZustand() {
 }
 ```
 
-## 🔄 Gerenciamento de Estado com Redux Toolkit
+## Gerenciamento de Estado com Redux Toolkit
 
 Redux Toolkit é uma solução robusta para aplicações com estado complexo:
 
@@ -411,7 +411,7 @@ export default function TodoList() {
 }
 ```
 
-## 🧠 Estado do Servidor com React Query / TanStack Query
+## Estado do Servidor com React Query / TanStack Query
 
 Para gerenciar o estado de dados do servidor, o TanStack Query (anteriormente React Query) é uma excelente opção:
 
@@ -582,7 +582,7 @@ export default function PostsList() {
 }
 ```
 
-## 🧪 Estado na URL com useSearchParams
+## Estado na URL com useSearchParams
 
 Para estado persistente na URL:
 
@@ -674,7 +674,7 @@ export default function FiltroProdutos() {
 }
 ```
 
-## 💾 Estado Persistente com Cookies e Local Storage
+## Estado Persistente com Cookies e Local Storage
 
 Para armazenar estado entre sessões:
 
@@ -849,7 +849,7 @@ function BannerCookies() {
 }
 ```
 
-## 🔀 Escolhendo a Solução Certa
+## Escolhendo a Solução Certa
 
 | Solução | Quando Usar | Complexidade | Vantagens |
 |---------|-------------|--------------|-----------|
@@ -861,7 +861,7 @@ function BannerCookies() {
 | URL State | Filtros, paginação | Baixa | Compartilhável, preservado no histórico |
 | localStorage/Cookies | Preferências do usuário | Baixa | Persistência entre sessões |
 
-## 🔧 Boas Práticas
+## Boas Práticas
 
 1. **Combine Abordagens**: Use diferentes soluções para diferentes tipos de estado
    ```
@@ -883,11 +883,11 @@ function BannerCookies() {
 
 6. **Performance**: Evite re-renderizações desnecessárias usando memo, useMemo e useCallback quando apropriado
 
-## 📚 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação do React sobre Gerenciamento de Estado](https://react.dev/learn/managing-state)
 - [Zustand - Documentação Oficial](https://github.com/pmndrs/zustand)
 - [Redux Toolkit - Documentação](https://redux-toolkit.js.org/)
 - [TanStack Query - Documentação](https://tanstack.com/query/latest)
 - [Next.js - Dados e Renderização](https://nextjs.org/docs/app/building-your-application/data-fetching)
-- [Jotai - Gerenciamento de Estado Atômico](https://jotai.org/) 
+- [Jotai - Gerenciamento de Estado Atômico](https://jotai.org/)

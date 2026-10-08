@@ -1,31 +1,31 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🔍 SEO e Metadados no Next.js 📊
+# SEO e Metadados no Next.js
 
 O Search Engine Optimization (SEO) é fundamental para garantir que sua aplicação seja encontrada pelos mecanismos de busca. O Next.js oferece ferramentas poderosas para otimizar sua aplicação para SEO, permitindo que você configure metadados, gere sitemap, robots.txt e muito mais. Neste guia, vamos explorar como aproveitar essas funcionalidades para melhorar o posicionamento da sua aplicação nos resultados de busca.
 
-## 🚫 Desafios de SEO em SPAs Tradicionais
+## Desafios de SEO em SPAs Tradicionais
 
 As **Single Page Applications (SPAs)** enfrentam sérios desafios quando se trata de SEO:
 
 ### Problemas Comuns:
 
-1. **🕷️ Crawling Limitado**:
+1. **Crawling Limitado**:
    - Bots de mecanismos de busca podem não executar JavaScript adequadamente
    - Conteúdo dinâmico pode não ser indexado
    - Tempo limite de crawling pode ser excedido
 
-2. **📄 Conteúdo Vazio Inicial**:
+2. **Conteúdo Vazio Inicial**:
    - HTML inicial contém apenas um div vazio
    - Meta tags são genéricas para todas as páginas
    - Falta de conteúdo estruturado para indexação
 
-3. **🔗 URLs Problemáticas**:
+3. **URLs Problemáticas**:
    - Hash routing (#) não é ideal para SEO
    - Estados de aplicação podem não corresponder a URLs únicos
    - Dificuldade em compartilhar páginas específicas
 
-4. **⏱️ Core Web Vitals Ruins**:
+4. **Core Web Vitals Ruins**:
    - First Contentful Paint (FCP) lento
    - Largest Contentful Paint (LCP) prejudicado
    - Cumulative Layout Shift (CLS) por carregamento dinâmico
@@ -36,30 +36,30 @@ O Next.js foi projetado desde o início para resolver esses desafios de SEO:
 
 ### Soluções Integradas:
 
-1. **🏗️ Server-Side Rendering (SSR)**:
+1. **Server-Side Rendering (SSR)**:
    - HTML completo é gerado no servidor
    - Bots veem o conteúdo imediatamente
    - Meta tags dinâmicas por página
    - Conteúdo estruturado disponível na primeira requisição
 
-2. **📄 Static Site Generation (SSG)**:
+2. **Static Site Generation (SSG)**:
    - Páginas pré-renderizadas durante o build
    - Performance máxima para crawlers
    - Conteúdo sempre disponível
    - Ideal para blogs, documentação e landing pages
 
-3. **🔄 Incremental Static Regeneration (ISR)**:
+3. **Incremental Static Regeneration (ISR)**:
    - Combina benefícios de SSG com atualizações dinâmicas
    - Conteúdo sempre fresco sem comprometer SEO
    - Regeneração automática baseada em tempo ou eventos
 
-4. **🎯 API de Metadados Avançada**:
+4. **API de Metadados Avançada**:
    - Metadados específicos por página
    - Open Graph e Twitter Cards automáticos
    - Schema.org JSON-LD integrado
    - Sitemap e robots.txt dinâmicos
 
-5. **📊 Core Web Vitals Otimizados**:
+5. **Core Web Vitals Otimizados**:
    - Code splitting automático
    - Otimização de imagens integrada
    - Prefetching inteligente
@@ -68,7 +68,7 @@ O Next.js foi projetado desde o início para resolver esses desafios de SEO:
 ### Resultado:
 **O Next.js transforma sua aplicação React em uma máquina de SEO**, oferecendo todos os benefícios de uma SPA moderna com a indexabilidade de sites tradicionais.
 
-## 📋 Metadados no Next.js
+## Metadados no Next.js
 
 O Next.js fornece uma forma simples e eficiente de definir metadados para suas páginas. Existem duas abordagens principais, dependendo do router que você está utilizando:
 
@@ -186,7 +186,7 @@ export default function Home() {
 }
 ```
 
-## 🌐 Open Graph e Social Media
+## Open Graph e Social Media
 
 Os metadados Open Graph permitem controlar como sua página aparece quando compartilhada em redes sociais como Facebook, Twitter e LinkedIn.
 
@@ -278,7 +278,7 @@ export async function generateMetadata({ params }) {
 }
 ```
 
-## 🤖 Robots.txt e Controle de Indexação
+## Robots.txt e Controle de Indexação
 
 ### Criando um arquivo Robots.txt
 
@@ -332,7 +332,7 @@ export const metadata = {
 };
 ```
 
-## 🗺️ Sitemap
+## Sitemap
 
 Um sitemap ajuda os mecanismos de busca a entender a estrutura do seu site.
 
@@ -410,7 +410,7 @@ export async function getServerSideProps({ res }) {
 export default Sitemap;
 ```
 
-## 📱 Responsividade e Mobile Friendliness
+## Responsividade e Mobile Friendliness
 
 A otimização para dispositivos móveis é um fator de ranqueamento importante:
 
@@ -430,7 +430,7 @@ export const metadata = {
 };
 ```
 
-## 🌍 Internacionalização (i18n)
+## Internacionalização (i18n)
 
 A internacionalização permite que seu site atenda audiências em diferentes idiomas:
 
@@ -469,7 +469,7 @@ export const config = {
 };
 ```
 
-## 📊 Estrutura de Dados Schema.org
+## Estrutura de Dados Schema.org
 
 Adicionar Schema.org JSON-LD ajuda os mecanismos de busca a entender o conteúdo da sua página:
 
@@ -579,7 +579,7 @@ export default async function BlogPost({ params }) {
 }
 ```
 
-## 🔄 Canonical URLs
+## Canonical URLs
 
 As URLs canônicas ajudam a evitar conteúdo duplicado:
 
@@ -596,7 +596,7 @@ export const metadata = {
 };
 ```
 
-## 🧠 Ferramentas e Análise de SEO
+## Ferramentas e Análise de SEO
 
 ### Integração com Google Analytics
 
@@ -641,7 +641,7 @@ export const metadata = {
 };
 ```
 
-## 🚀 Melhores Práticas de SEO com Next.js
+## Melhores Práticas de SEO com Next.js
 
 1. **Use Renderização do Lado do Servidor (SSR)**: Garante que os mecanismos de busca vejam o conteúdo completo
 2. **Implemente URLs semânticas**: Crie URLs amigáveis e descritivas
@@ -654,7 +654,7 @@ export const metadata = {
 9. **Mantenha um sitemap atualizado**: Gere sitemaps dinâmicos
 10. **Configure um arquivo robots.txt**: Controle o que deve ser indexado
 
-## 🔄 Auditoria e Monitoramento de SEO
+## Auditoria e Monitoramento de SEO
 
 ### Integração com Lighthouse
 
@@ -677,7 +677,7 @@ jobs:
           temporaryPublicStorage: true
 ```
 
-## 🔗 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial de SEO do Next.js](https://nextjs.org/docs/app/building-your-application/optimizing/metadata)
 - [API de Metadados do Next.js](https://nextjs.org/docs/app/api-reference/file-conventions/metadata)
@@ -689,6 +689,6 @@ jobs:
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🌎 Internacionalização no Next.js 🌍
+# Internacionalização no Next.js
 
 A internacionalização (i18n) permite que seu aplicativo Next.js seja acessível para usuários de diferentes idiomas e regiões. O Next.js oferece suporte integrado para internacionalização, facilitando a criação de aplicativos multilíngues. Neste guia, vamos explorar como implementar e gerenciar recursos de internacionalização em projetos Next.js.
 
-## 📚 Conceitos Básicos
+## Conceitos Básicos
 
 Antes de mergulharmos na implementação, vamos entender alguns conceitos importantes:
 
@@ -14,7 +14,7 @@ Antes de mergulharmos na implementação, vamos entender alguns conceitos import
 - **Formatação**: Ajuste de datas, números e moedas para diferentes locales
 - **Roteamento i18n**: Navegação entre diferentes versões de idioma do seu site
 
-## 🔄 Configurando i18n no Next.js
+## Configurando i18n no Next.js
 
 ### Configuração no App Router (Next.js 13+)
 
@@ -143,7 +143,7 @@ module.exports = {
 };
 ```
 
-## 🔤 Gerenciamento de Traduções
+## Gerenciamento de Traduções
 
 Existem várias bibliotecas para gerenciar traduções em Next.js. Vamos explorar algumas das mais populares:
 
@@ -323,7 +323,7 @@ export default function Home() {
 }
 ```
 
-## 📅 Formatação de Datas, Números e Moedas
+## Formatação de Datas, Números e Moedas
 
 Para formatar datas, números e moedas de acordo com o locale, podemos usar a API Intl nativa do JavaScript:
 
@@ -400,7 +400,7 @@ export function FormatadoresExemplo() {
 }
 ```
 
-## 🔄 Alternância de Idiomas
+## Alternância de Idiomas
 
 Vamos criar um seletor de idioma que funciona tanto no App Router quanto no Pages Router:
 
@@ -475,7 +475,7 @@ export default function SeletorIdioma() {
 }
 ```
 
-## 🔍 SEO para Sites Multilíngues
+## SEO para Sites Multilíngues
 
 Para um bom SEO em sites multilíngues, é importante incluir as tags apropriadas:
 
@@ -553,7 +553,7 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 ```
 
-## 🌐 URL Multilíngues
+## URL Multilíngues
 
 Diferentes estratégias para URLs multilíngues:
 
@@ -599,7 +599,7 @@ module.exports = {
 };
 ```
 
-## 📐 Considerações de Design para Interfaces Multilíngues
+## Considerações de Design para Interfaces Multilíngues
 
 Ao criar interfaces para diferentes idiomas, é importante considerar:
 
@@ -640,7 +640,7 @@ export default function CarrinhoPage() {
 }
 ```
 
-## 🚀 Melhores Práticas
+## Melhores Práticas
 
 1. **Separar conteúdo de código**: Mantenha as traduções em arquivos JSON separados
 2. **Usar ferramentas de gestão de traduções**: Ferramentas como POEditor, Phrase ou Crowdin
@@ -649,7 +649,7 @@ export default function CarrinhoPage() {
 5. **Considerar traduções baseadas em contexto**: Traduções diferentes para a mesma palavra dependendo do contexto
 6. **Automatizar exportação/importação de traduções**: Facilitar o trabalho dos tradutores
 
-## 🛠️ Recursos e Ferramentas Úteis
+## Recursos e Ferramentas Úteis
 
 - **Bibliotecas de i18n**:
   - [next-intl](https://next-intl-docs.vercel.app/)
@@ -667,7 +667,7 @@ export default function CarrinhoPage() {
   - [Internacionalização no App Router](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
   - [Internacionalização no Pages Router](https://nextjs.org/docs/pages/building-your-application/routing/internationalization)
 
-## 🌍 Exemplo Completo de Aplicação Multilíngue
+## Exemplo Completo de Aplicação Multilíngue
 
 ### Estrutura de Pastas (App Router)
 
@@ -697,6 +697,6 @@ Implementando esse sistema de internacionalização, seu aplicativo Next.js esta
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🧩 Componentes e Layout no Next.js 🔄
+# Componentes e Layout no Next.js
 
 No Next.js, os componentes e layouts são fundamentais para criar interfaces reutilizáveis e manter uma estrutura consistente em toda a aplicação. Este guia explorará como trabalhar com componentes, criar layouts eficientes e aproveitar os recursos específicos do Next.js.
 
-## 📋 Componentes no Next.js
+## Componentes no Next.js
 
 Os componentes no Next.js seguem o modelo do React, mas com algumas funcionalidades adicionais específicas para o framework. No Next.js 13+ com App Router, temos dois tipos principais de componentes:
 
@@ -71,7 +71,7 @@ export default function Contador() {
 - Para usar efeitos e ciclo de vida
 - Para APIs disponíveis apenas no navegador (localStorage, navigator, etc.)
 
-## 🏗️ Padrões de Composição
+## Padrões de Composição
 
 ### Dividindo Client e Server Components
 
@@ -184,7 +184,7 @@ export default function RootLayout({ children }) {
 }
 ```
 
-## 📐 Layouts no Next.js
+## Layouts no Next.js
 
 Os layouts permitem compartilhar UI entre múltiplas páginas. Com o App Router, os layouts são muito mais poderosos e eficientes.
 
@@ -264,7 +264,7 @@ export default function Layout({ sidebar, main }) {
 }
 ```
 
-## 🔄 Templates vs Layouts
+## Templates vs Layouts
 
 Templates são semelhantes aos layouts, mas reinicializam o estado quando o usuário navega entre rotas:
 
@@ -286,7 +286,7 @@ export default function Template({ children }) {
 - Quando quiser resetar o estado entre navegações
 - Para comportamentos que dependem de hooks de efeito na montagem
 
-## 📱 Componentes Específicos do Next.js
+## Componentes Específicos do Next.js
 
 O Next.js oferece componentes específicos para otimizar a experiência de desenvolvimento:
 
@@ -354,7 +354,7 @@ export default function Layout({ children }) {
 }
 ```
 
-## 🎭 Padrões de UI Avançados
+## Padrões de UI Avançados
 
 ### Modais e Overlays
 
@@ -435,7 +435,7 @@ export default function Error({ error, reset }) {
 }
 ```
 
-## 💅 Estilização de Componentes
+## Estilização de Componentes
 
 O Next.js suporta múltiplas abordagens de estilização:
 
@@ -509,7 +509,7 @@ export default function Button({ children, primary }) {
 }
 ```
 
-## 🧠 Melhores Práticas
+## Melhores Práticas
 
 1. **Mantenha a maioria como Server Components**: Use Client Components apenas onde necessário
 2. **Mova a interatividade para baixo**: Coloque a diretiva `'use client'` no nível mais baixo possível
@@ -519,7 +519,7 @@ export default function Button({ children, primary }) {
 6. **Coloque lógica de busca de dados em funções separadas**: Melhora a organização e facilita testes
 7. **Mantenha a estrutura consistente**: Adote padrões para nomes e organização de componentes
 
-## 🔗 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial de Componentes no Next.js](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns)
 - [Documentação de Layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts)
@@ -527,6 +527,6 @@ export default function Button({ children, primary }) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

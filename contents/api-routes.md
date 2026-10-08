@@ -1,34 +1,34 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🌐 API Routes no Next.js 📡
+# API Routes no Next.js
 
 Uma das funcionalidades mais poderosas do Next.js é a capacidade de criar APIs dentro do mesmo projeto, eliminando a necessidade de um servidor separado. As API Routes permitem criar endpoints que funcionam como qualquer API RESTful, facilitando a integração entre frontend e backend em uma única base de código.
 
-## 🚫 Limitações de SPAs com Backend Separado
+## Limitações de SPAs com Backend Separado
 
 As **Single Page Applications (SPAs)** tradicionais geralmente requerem um backend separado, o que cria diversos desafios:
 
 ### Problemas Comuns:
 
-1. **🔧 Complexidade de Configuração**:
+1. **Complexidade de Configuração**:
    - **Dois projetos separados**: Frontend e backend em repositórios diferentes
    - **Configuração de CORS**: Necessário para comunicação entre domínios
    - **Deploy duplo**: Duas aplicações para gerenciar e hospedar
    - **Sincronização de versões**: Compatibilidade entre frontend e backend
 
-2. **🌐 Problemas de Comunicação**:
+2. **Problemas de Comunicação**:
    - **Latência de rede**: Requisições HTTP entre serviços separados
    - **Tratamento de erros complexo**: Falhas de rede e timeouts
    - **Autenticação distribuída**: Tokens e sessões entre serviços
    - **Debugging dificultado**: Rastreamento de bugs entre sistemas
 
-3. **🔒 Exposição de APIs**:
+3. **Exposição de APIs**:
    - **Endpoints públicos**: APIs expostas na internet
    - **Segurança adicional**: Rate limiting, autenticação, autorização
    - **Documentação necessária**: APIs precisam ser documentadas
    - **Versionamento complexo**: Manter compatibilidade entre versões
 
-4. **⚙️ Overhead de Desenvolvimento**:
+4. **Overhead de Desenvolvimento**:
    - **Tecnologias diferentes**: Linguagens e frameworks distintos
    - **Equipes separadas**: Frontend e backend podem ter equipes diferentes
    - **Testes integrados**: Necessidade de testar comunicação entre serviços
@@ -40,31 +40,31 @@ O Next.js resolve esses problemas com **API Routes integradas** que oferecem:
 
 ### Benefícios Principais:
 
-1. **🏗️ Arquitetura Unificada**:
+1. **Arquitetura Unificada**:
    - **Monorepo**: Frontend e backend no mesmo projeto
    - **Tecnologia única**: JavaScript/TypeScript para tudo
    - **Deploy único**: Uma aplicação para gerenciar
    - **Versionamento sincronizado**: Frontend e backend sempre compatíveis
 
-2. **⚡ Performance Otimizada**:
+2. **Performance Otimizada**:
    - **Sem latência de rede**: Comunicação interna do servidor
    - **Compartilhamento de recursos**: Cache, conexões de banco, etc.
    - **Otimizações automáticas**: Next.js otimiza a comunicação interna
    - **Edge computing**: APIs podem rodar em edge locations
 
-3. **🔒 Segurança Aprimorada**:
+3. **Segurança Aprimorada**:
    - **APIs privadas**: Endpoints não expostos publicamente
    - **Proteção automática**: CSRF e outras proteções built-in
    - **Variáveis de ambiente**: Acesso seguro a secrets no servidor
    - **Autenticação integrada**: Sessões compartilhadas entre frontend e API
 
-4. **🛠️ Desenvolvimento Simplificado**:
+4. **Desenvolvimento Simplificado**:
    - **Hot reload**: Mudanças em APIs refletem instantaneamente
    - **Debugging unificado**: Logs e erros em um só lugar
    - **Tipagem compartilhada**: TypeScript entre frontend e backend
    - **Testes integrados**: Testar fluxos completos facilmente
 
-5. **🚀 Deploy e Hospedagem**:
+5. **Deploy e Hospedagem**:
    - **Serverless por padrão**: APIs escalam automaticamente
    - **Edge functions**: Execução próxima aos usuários
    - **Zero configuração**: Deploy automático em plataformas como Vercel
@@ -73,7 +73,7 @@ O Next.js resolve esses problemas com **API Routes integradas** que oferecem:
 ### Resultado:
 **As API Routes do Next.js transformam o desenvolvimento full-stack em uma experiência unificada e otimizada**, eliminando a complexidade de gerenciar sistemas separados enquanto oferece performance e segurança superiores.
 
-## 📋 Introdução às API Routes
+## Introdução às API Routes
 
 O Next.js oferece dois sistemas para criar APIs:
 
@@ -87,7 +87,7 @@ Ambos os sistemas permitem:
 - Manipular autenticação e autorização
 - Proteger dados sensíveis (chaves de API, senhas, etc.)
 
-## 🔄 Pages Router API Routes
+## Pages Router API Routes
 
 ### Criação Básica
 
@@ -181,7 +181,7 @@ function handler(req, res) {
 export default logger(handler);
 ```
 
-## 🔄 App Router Route Handlers
+## App Router Route Handlers
 
 Com o App Router (Next.js 13+), as APIs são implementadas como Route Handlers:
 
@@ -291,7 +291,7 @@ export async function GET(request) {
 }
 ```
 
-## 🔐 Autenticação e Autorização
+## Autenticação e Autorização
 
 ### JWT (JSON Web Tokens)
 
@@ -383,7 +383,7 @@ export const config = {
 };
 ```
 
-## 🗃️ Integração com Banco de Dados
+## Integração com Banco de Dados
 
 ### MongoDB com Mongoose
 
@@ -537,7 +537,7 @@ export async function POST(request) {
 }
 ```
 
-## 🔄 Chamando API Routes do Cliente
+## Chamando API Routes do Cliente
 
 ### Com fetch
 
@@ -630,7 +630,7 @@ export default function ListaUsuarios() {
 }
 ```
 
-## 🧪 Testes de API Routes
+## Testes de API Routes
 
 ### Com Jest e Supertest
 
@@ -677,7 +677,7 @@ describe('API de Produtos', () => {
 });
 ```
 
-## 🔄 Integração com Serviços Externos
+## Integração com Serviços Externos
 
 ### Envio de E-mails
 
@@ -767,7 +767,7 @@ export async function POST(request) {
 }
 ```
 
-## 🧠 Melhores Práticas
+## Melhores Práticas
 
 1. **Separação de Preocupações**: Mantenha a lógica de negócio separada dos handlers
 2. **Validação de Dados**: Valide sempre os dados recebidos nas requisições
@@ -778,7 +778,7 @@ export async function POST(request) {
 7. **CORS**: Configure corretamente para permitir apenas origens confiáveis
 8. **Logs**: Mantenha logs para depuração e monitoramento
 
-## 🔗 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial de API Routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes)
 - [Documentação de Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
@@ -786,6 +786,6 @@ export async function POST(request) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

@@ -1,32 +1,32 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🧭 Roteamento no Next.js 🗺️
+# Roteamento no Next.js
 
 O sistema de roteamento do Next.js é uma das suas características mais poderosas, permitindo navegar entre diferentes páginas da sua aplicação de forma simples e eficiente. Neste guia, vamos explorar as diferentes abordagens de roteamento disponíveis no Next.js.
 
-## 🚫 Problemas de Roteamento em SPAs Tradicionais
+## Problemas de Roteamento em SPAs Tradicionais
 
 As **Single Page Applications (SPAs)** convencionais enfrentam diversos desafios relacionados ao roteamento:
 
 ### Limitações Comuns:
 
-1. **🔗 URLs Não Refletem o Estado Real**:
+1. **URLs Não Refletem o Estado Real**:
    - Hash routing (#) não é ideal para SEO
    - Estados complexos da aplicação podem não ter URLs correspondentes
    - Dificuldade em compartilhar links específicos
    - Problemas com botões voltar/avançar do navegador
 
-2. **📄 Todas as Rotas em Um Bundle**:
+2. **Todas as Rotas em Um Bundle**:
    - Todo o código de roteamento é baixado na primeira visita
    - Rotas não utilizadas consomem recursos desnecessariamente
    - Tempo de carregamento inicial muito alto
 
-3. **🔍 SEO Comprometido**:
+3. **SEO Comprometido**:
    - Mecanismos de busca podem não indexar rotas adequadamente
    - Falta de meta tags específicas por rota
    - Conteúdo dinâmico pode não ser crawleado
 
-4. **⚙️ Configuração Complexa**:
+4. **Configuração Complexa**:
    - Necessidade de configurar bibliotecas de roteamento manualmente
    - Gerenciamento manual de lazy loading
    - Configuração de prefetching e code splitting
@@ -37,28 +37,28 @@ O Next.js resolve esses problemas com um **sistema de roteamento baseado em arqu
 
 ### Benefícios Principais:
 
-1. **📁 File-based Routing**:
+1. **File-based Routing**:
    - **Zero configuração**: Estrutura de pastas = estrutura de rotas
    - **URLs semânticas**: Cada arquivo representa uma rota real
    - **Fácil organização**: Estrutura intuitiva e escalável
    - **SEO otimizado**: Cada rota é uma página real indexável
 
-2. **⚡ Code Splitting Automático**:
+2. **Code Splitting Automático**:
    - **Bundles separados**: Cada página é um bundle independente
    - **Carregamento sob demanda**: Apenas o código necessário é baixado
    - **Performance otimizada**: Tempo de carregamento inicial reduzido
 
-3. **🔗 Prefetching Inteligente**:
+3. **Prefetching Inteligente**:
    - **Links visíveis são pré-carregados**: Navegação instantânea
    - **Estratégias configuráveis**: Controle fino sobre o prefetching
    - **Otimização automática**: Baseado na viewport e conexão do usuário
 
-4. **🌐 Suporte Completo a SSR/SSG**:
+4. **Suporte Completo a SSR/SSG**:
    - **Cada rota pode ter sua estratégia**: SSR, SSG, ISR ou CSR
    - **Meta tags dinâmicas**: SEO otimizado por página
    - **Conteúdo indexável**: Mecanismos de busca veem o conteúdo real
 
-5. **🔄 Navegação Híbrida**:
+5. **Navegação Híbrida**:
    - **Client-side navigation**: Navegação rápida após carregamento inicial
    - **Fallback para navegação tradicional**: Funciona mesmo com JS desabilitado
    - **Histórico do navegador**: Botões voltar/avançar funcionam perfeitamente
@@ -66,7 +66,7 @@ O Next.js resolve esses problemas com um **sistema de roteamento baseado em arqu
 ### Resultado:
 **O Next.js transforma o roteamento de um problema complexo em uma solução elegante e automática**, oferecendo performance superior e SEO otimizado sem configuração manual.
 
-## 📋 Sistemas de Roteamento
+## Sistemas de Roteamento
 
 O Next.js oferece dois sistemas de roteamento principais:
 
@@ -75,7 +75,7 @@ O Next.js oferece dois sistemas de roteamento principais:
 
 Ambos podem coexistir no mesmo projeto durante a migração, mas é recomendado escolher um para novos projetos.
 
-## 🔄 Pages Router (Sistema Tradicional)
+## Pages Router (Sistema Tradicional)
 
 ### Roteamento Baseado em Arquivos
 
@@ -208,7 +208,7 @@ pages/
   └── [[...slug]].js  # → /, /a, /a/b, /a/b/c, etc.
 ```
 
-## 🔄 App Router (Next.js 13+)
+## App Router (Next.js 13+)
 
 ### Estrutura de Pastas
 
@@ -311,7 +311,7 @@ app/
       └── page.js  # → /, /a, /a/b, etc.
 ```
 
-## 🔍 Recursos Avançados de Roteamento
+## Recursos Avançados de Roteamento
 
 ### Middleware
 
@@ -422,7 +422,7 @@ export default function Error({ error, reset }) {
 }
 ```
 
-## 🧠 Melhores Práticas de Roteamento
+## Melhores Práticas de Roteamento
 
 1. **Prefetch**: Links pré-carregam páginas por padrão quando visíveis (desative com `prefetch={false}` se necessário)
 
@@ -447,13 +447,13 @@ export default function Error({ error, reset }) {
          └── page.js
    ```
 
-## 🔗 Recursos e Links Úteis
+## Recursos e Links Úteis
 
 - [Documentação oficial de roteamento no Next.js](https://nextjs.org/docs/routing)
 - [Guia de migração do Pages para App Router](https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration)
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

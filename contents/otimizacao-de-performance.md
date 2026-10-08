@@ -1,48 +1,48 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# ⚡ Otimização de Performance no Next.js 🚀
+# Otimização de Performance no Next.js
 
 A performance é um aspecto crítico para o sucesso de aplicações web modernas. O Next.js oferece diversas funcionalidades e otimizações integradas que ajudam a criar sites rápidos e eficientes. Neste guia, vamos explorar as técnicas e ferramentas disponíveis para maximizar a performance da sua aplicação Next.js.
 
-## 📋 Por que Performance Importa?
+## Por que Performance Importa?
 
 Uma aplicação rápida proporciona:
-- 💰 Maiores taxas de conversão
-- 🔄 Menores taxas de rejeição
-- 📱 Melhor experiência em dispositivos móveis
-- 🔍 Melhor posicionamento em mecanismos de busca (SEO)
-- 👥 Maior engajamento dos usuários
+- Maiores taxas de conversão
+- Menores taxas de rejeição
+- Melhor experiência em dispositivos móveis
+- Melhor posicionamento em mecanismos de busca (SEO)
+- Maior engajamento dos usuários
 
 O Next.js foi projetado com performance em mente, oferecendo otimizações automáticas e ferramentas para alcançar excelentes métricas de desempenho.
 
-## 🚫 Problemas de Performance em SPAs Tradicionais
+## Problemas de Performance em SPAs Tradicionais
 
 As **Single Page Applications (SPAs)** convencionais enfrentam diversos desafios de performance:
 
 ### Principais Limitações:
 
-1. **📦 Bundle Size Gigante**:
+1. **Bundle Size Gigante**:
    - Todo o JavaScript da aplicação é baixado na primeira visita
    - Bibliotecas e dependências são carregadas mesmo se não utilizadas
    - Tempo de carregamento inicial extremamente lento
    - Experiência ruim em conexões lentas
 
-2. **⏱️ Time to Interactive (TTI) Alto**:
+2. **Time to Interactive (TTI) Alto**:
    - Usuários precisam esperar todo o JavaScript ser baixado e executado
    - Tela em branco por longos períodos
    - Frustração do usuário e alta taxa de abandono
 
-3. **🔄 Renderização Bloqueante**:
+3. **Renderização Bloqueante**:
    - JavaScript bloqueia a renderização inicial
    - Conteúdo só aparece após execução completa do JS
    - Dispositivos lentos sofrem ainda mais
 
-4. **📱 Consumo Excessivo de Recursos**:
+4. **Consumo Excessivo de Recursos**:
    - Processamento intensivo no dispositivo do usuário
    - Drenagem rápida da bateria em dispositivos móveis
    - Experiência degradada em hardware limitado
 
-5. **🌐 Problemas de Cache**:
+5. **Problemas de Cache**:
    - Dificuldade em implementar estratégias de cache eficientes
    - Invalidação de cache complexa
    - Recursos não são reutilizados adequadamente
@@ -53,36 +53,36 @@ O Next.js implementa **otimizações automáticas** que resolvem sistematicament
 
 ### Soluções Integradas:
 
-1. **📦 Code Splitting Automático**:
+1. **Code Splitting Automático**:
    - Cada página se torna um bundle separado
    - Apenas o código necessário é carregado
    - Redução drástica do tempo de carregamento inicial
    - Carregamento sob demanda de funcionalidades
 
-2. **⚡ Server-Side Rendering (SSR)**:
+2. **Server-Side Rendering (SSR)**:
    - HTML é gerado no servidor
    - Conteúdo visível imediatamente
    - JavaScript é hidratado progressivamente
    - Time to First Byte (TTFB) otimizado
 
-3. **🏗️ Static Site Generation (SSG)**:
+3. **Static Site Generation (SSG)**:
    - Páginas pré-renderizadas durante o build
    - Performance máxima possível
    - Servidas via CDN globalmente
    - Zero tempo de processamento no servidor
 
-4. **🔄 Incremental Static Regeneration (ISR)**:
+4. **Incremental Static Regeneration (ISR)**:
    - Combina velocidade estática com conteúdo dinâmico
    - Regeneração automática em background
    - Cache inteligente e invalidação eficiente
 
-5. **🖼️ Otimização de Imagens Automática**:
+5. **Otimização de Imagens Automática**:
    - Lazy loading nativo
    - Conversão automática para WebP/AVIF
    - Responsive images automáticas
    - Prevenção de Cumulative Layout Shift (CLS)
 
-6. **🔗 Prefetching Inteligente**:
+6. **Prefetching Inteligente**:
    - Links visíveis são pré-carregados automaticamente
    - Navegação instantânea entre páginas
    - Estratégias de prefetch configuráveis
@@ -90,7 +90,7 @@ O Next.js implementa **otimizações automáticas** que resolvem sistematicament
 ### Resultado:
 **O Next.js transforma uma SPA lenta em uma aplicação ultra-rápida**, mantendo todos os benefícios de interatividade enquanto resolve os problemas fundamentais de performance.
 
-## 🔄 Core Web Vitals e Métricas de Performance
+## Core Web Vitals e Métricas de Performance
 
 O Google utiliza as Core Web Vitals como métricas importantes para avaliar a experiência do usuário:
 
@@ -100,7 +100,7 @@ O Google utiliza as Core Web Vitals como métricas importantes para avaliar a ex
 
 O Next.js ajuda a otimizar estas métricas através de diversas técnicas integradas.
 
-## 🚀 Otimizações Automáticas do Next.js
+## Otimizações Automáticas do Next.js
 
 ### Code Splitting
 
@@ -178,7 +178,7 @@ Estratégias disponíveis:
 - `lazyOnload`: Carrega durante o tempo ocioso do navegador
 - `worker`: (Experimental) Carrega em um web worker
 
-## 🔄 Estratégias de Renderização
+## Estratégias de Renderização
 
 ### Server-Side Rendering (SSR)
 
@@ -251,7 +251,7 @@ export default async function Produto({ params }) {
 }
 ```
 
-## 🚀 Otimização de JavaScript
+## Otimização de JavaScript
 
 ### Reduzindo o Tamanho do Bundle
 
@@ -310,7 +310,7 @@ export default function MapaInterativo() {
 }
 ```
 
-## 🔍 Otimização de SEO e Metadata
+## Otimização de SEO e Metadata
 
 ```jsx
 // app/layout.jsx (App Router)
@@ -344,7 +344,7 @@ export default function RootLayout({ children }) {
 }
 ```
 
-## 📱 Responsividade e Adaptabilidade
+## Responsividade e Adaptabilidade
 
 ### Mobile-First Design
 
@@ -402,7 +402,7 @@ export default function AdaptiveComponent() {
 }
 ```
 
-## 🔍 Análise e Monitoramento de Performance
+## Análise e Monitoramento de Performance
 
 ### Ferramentas de Análise Integradas
 
@@ -508,7 +508,7 @@ module.exports = {
 };
 ```
 
-## 💾 Caching e Persistência
+## Caching e Persistência
 
 ### Caching de Dados
 
@@ -567,7 +567,7 @@ export default function CarrinhoCompras() {
 }
 ```
 
-## 🧰 Ferramentas e Técnicas Avançadas
+## Ferramentas e Técnicas Avançadas
 
 ### Prefetching de Dados
 
@@ -670,7 +670,7 @@ export default function RootLayout({ children }) {
 }
 ```
 
-## 📱 Otimização para Dispositivos Móveis
+## Otimização para Dispositivos Móveis
 
 ### Adaptação para Conexões Lentas
 
@@ -751,7 +751,7 @@ export function useNetworkStatus() {
 }
 ```
 
-## 🧠 Melhores Práticas
+## Melhores Práticas
 
 1. **Minimize JavaScript**: Use componentes Server e importe dinamicamente quando possível
 2. **Otimize imagens**: Sempre use o componente `Image` com dimensões adequadas
@@ -764,7 +764,7 @@ export function useNetworkStatus() {
 9. **Implemente estratégias de cache**: Combine ISR, SWR e localStorage
 10. **Monitore constantemente**: Use ferramentas de análise para identificar gargalos
 
-## 🔍 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação de performance do Next.js](https://nextjs.org/docs/advanced-features/measuring-performance)
 - [Web Vitals](https://web.dev/vitals/)
@@ -774,6 +774,6 @@ export function useNetworkStatus() {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

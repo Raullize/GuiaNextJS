@@ -1,31 +1,31 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 🔄 Renderização e Data Fetching no Next.js ⚡
+# Renderização e Data Fetching no Next.js
 
 O Next.js se destaca pela sua abordagem flexível à renderização, oferecendo múltiplas estratégias para otimizar o desempenho, SEO e experiência do usuário. Neste guia, vamos explorar as diferentes formas de renderização e como buscar dados em cada uma delas.
 
-## 🚫 Limitações das SPAs Tradicionais
+## Limitações das SPAs Tradicionais
 
 Antes de explorarmos as soluções do Next.js, é importante entender os desafios das **Single Page Applications (SPAs)** tradicionais:
 
 ### Problemas Comuns das SPAs:
 
-1. **🔍 SEO Prejudicado**: 
+1. **SEO Prejudicado**:
    - Conteúdo renderizado apenas no cliente
    - Mecanismos de busca podem não indexar adequadamente
    - Meta tags dinâmicas são difíceis de implementar
 
-2. **⏱️ Tempo de Carregamento Inicial Lento**:
+2. **Tempo de Carregamento Inicial Lento**:
    - Todo o bundle JavaScript deve ser baixado antes da primeira renderização
    - Usuários veem uma tela em branco por mais tempo
    - Experiência ruim em conexões lentas
 
-3. **📱 Performance Inconsistente**:
+3. **Performance Inconsistente**:
    - Dispositivos menos potentes sofrem com renderização pesada no cliente
    - Bateria dos dispositivos móveis é drenada mais rapidamente
    - Experiência degradada em hardware limitado
 
-4. **♿ Problemas de Acessibilidade**:
+4. **Problemas de Acessibilidade**:
    - Leitores de tela podem ter dificuldade com conteúdo dinâmico
    - Navegação por teclado pode ser comprometida
    - Falta de progressive enhancement
@@ -34,25 +34,25 @@ Antes de explorarmos as soluções do Next.js, é importante entender os desafio
 
 O Next.js oferece **múltiplas estratégias de renderização** que resolvem essas limitações:
 
-## 📋 Estratégias de Renderização
+## Estratégias de Renderização
 
 O Next.js oferece quatro principais estratégias de renderização:
 
 1. **Server-Side Rendering (SSR)**: Renderização no servidor a cada requisição
    - ✅ **Resolve**: SEO, tempo de carregamento inicial, acessibilidade
-   
+  
 2. **Static Site Generation (SSG)**: Renderização durante o build
    - ✅ **Resolve**: Performance máxima, SEO perfeito, experiência consistente
-   
+  
 3. **Incremental Static Regeneration (ISR)**: Atualização de páginas estáticas em intervalos
    - ✅ **Resolve**: Equilibra performance estática com conteúdo dinâmico
-   
+  
 4. **Client-Side Rendering (CSR)**: Renderização no navegador do usuário
    - ✅ **Usado estrategicamente**: Para conteúdo altamente interativo e personalizado
 
 Cada estratégia tem casos de uso específicos, e o Next.js permite **misturá-las na mesma aplicação** para obter o melhor resultado possível.
 
-## 🌐 Server-Side Rendering (SSR)
+## Server-Side Rendering (SSR)
 
 Na renderização do lado do servidor, o HTML é gerado no servidor a cada requisição.
 
@@ -112,7 +112,7 @@ export default async function ProdutoPage({ params }) {
 - Quando os dados mudam frequentemente
 - Quando é necessário acesso a cookies ou cabeçalhos de requisição
 
-## 🏗️ Static Site Generation (SSG)
+## Static Site Generation (SSG)
 
 Com o SSG, as páginas são geradas durante o build e servidas como arquivos estáticos.
 
@@ -185,7 +185,7 @@ export default async function BlogPost({ params }) {
 - Listagens de produtos que não mudam frequentemente
 - Quando o SEO é prioritário
 
-## 🔄 Incremental Static Regeneration (ISR)
+## Incremental Static Regeneration (ISR)
 
 O ISR permite regenerar páginas estáticas após a build, em intervalos definidos.
 
@@ -284,7 +284,7 @@ export async function POST(request) {
 - Dashboards com atualizações periódicas
 - Quando é necessário equilibrar performance e atualidade
 
-## 💻 Client-Side Rendering (CSR)
+## Client-Side Rendering (CSR)
 
 Para dados que mudam frequentemente ou são específicos do usuário.
 
@@ -351,7 +351,7 @@ export default function NotificacoesUsuario() {
 - Dados personalizados por usuário
 - Interfaces altamente interativas
 
-## 🔄 Renderização Híbrida (App Router)
+## Renderização Híbrida (App Router)
 
 No App Router, você pode combinar Server e Client Components:
 
@@ -411,7 +411,7 @@ export default function DadosUsuarioClientSide() {
 }
 ```
 
-## 📊 Estratégias de Data Fetching
+## Estratégias de Data Fetching
 
 ### Fetch API (App Router)
 
@@ -489,7 +489,7 @@ export default function PaginaProduto({ params }) {
 }
 ```
 
-## 💾 Manipulando Cache
+## Manipulando Cache
 
 ### Revalidar Todo o Cache
 
@@ -530,7 +530,7 @@ async function getProduto(id) {
 }
 ```
 
-## 🧠 Melhores Práticas
+## Melhores Práticas
 
 1. **Escolha a estratégia certa**: Avalie cada página individualmente
 2. **Combine abordagens**: Use SSG para conteúdo estático e CSR para dados dinâmicos
@@ -540,7 +540,7 @@ async function getProduto(id) {
 6. **Prefetching de dados**: Use técnicas como preload para conteúdo importante
 7. **Cache eficiente**: Estratégias de caching reduzem chamadas desnecessárias à API
 
-## 🔗 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial de Data Fetching](https://nextjs.org/docs/app/building-your-application/data-fetching)
 - [SWR - Biblioteca de fetching para React](https://swr.vercel.app/)
@@ -548,6 +548,6 @@ async function getProduto(id) {
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>

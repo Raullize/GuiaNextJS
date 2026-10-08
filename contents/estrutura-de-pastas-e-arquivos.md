@@ -1,10 +1,10 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=header"/>
 
-# 📁 Estrutura de Pastas e Arquivos no Next.js 📂
+# Estrutura de Pastas e Arquivos no Next.js
 
 Compreender a estrutura de pastas e arquivos do Next.js é fundamental para organizar seu projeto de forma eficiente. O Next.js utiliza convenções de arquivos e pastas para simplificar o desenvolvimento e fornecer funcionalidades poderosas.
 
-## 📑 Visão Geral da Estrutura
+## Visão Geral da Estrutura
 
 O Next.js oferece dois sistemas de roteamento principais: o **Pages Router** (sistema tradicional) e o **App Router** (mais recente, introduzido na versão 13). Vamos explorar ambos:
 
@@ -23,9 +23,9 @@ meu-projeto-nextjs/
   └── README.md        # Documentação do projeto
 ```
 
-## 🗄️ Diretórios Principais
+## Diretórios Principais
 
-### 📁 `public/`
+### `public/`
 
 O diretório `public/` é usado para armazenar arquivos estáticos que serão servidos diretamente:
 
@@ -39,7 +39,7 @@ Exemplo de uso:
 <img src="/images/logo.png" alt="Logo" />
 ```
 
-### 📁 `pages/` (Pages Router)
+### `pages/` (Pages Router)
 
 No sistema Pages Router, cada arquivo JavaScript/TypeScript neste diretório se torna uma rota automaticamente:
 
@@ -63,7 +63,7 @@ pages/
 - `404.js`: Página para "não encontrado"
 - `500.js`: Página para erro de servidor
 
-### 📁 `app/` (App Router)
+### `app/` (App Router)
 
 Introduzido no Next.js 13, o App Router usa uma abordagem de "pastas = rotas" com arquivos especiais:
 
@@ -90,7 +90,7 @@ app/
 - `route.js`: Manipuladores de API
 - `template.js`: Versão sem persistência de layouts
 
-### 📁 `components/`
+### `components/`
 
 Embora não seja uma pasta especial do Next.js, é uma convenção comum organizar componentes reutilizáveis:
 
@@ -107,7 +107,7 @@ components/
       └── products/
 ```
 
-### 📁 `styles/`
+### `styles/`
 
 Para armazenar arquivos de estilo:
 
@@ -118,7 +118,7 @@ styles/
   └── theme.js         # Configurações de tema
 ```
 
-### 📁 `lib/` ou `utils/`
+### `lib/` ou `utils/`
 
 Para funções utilitárias, helpers e lógica de negócio:
 
@@ -130,7 +130,7 @@ lib/
   └── helpers.js       # Funções auxiliares
 ```
 
-## 🧩 Convenções de Nomenclatura
+## Convenções de Nomenclatura
 
 O Next.js segue certas convenções para nomes de arquivos:
 
@@ -140,7 +140,7 @@ O Next.js segue certas convenções para nomes de arquivos:
   - Pages Router: `[param].js` para rotas dinâmicas
   - App Router: Pastas com nome `[param]` e um arquivo page.js dentro
 
-## 🔀 Rotas Dinâmicas
+## Rotas Dinâmicas
 
 ### Pages Router:
 ```
@@ -157,7 +157,7 @@ app/
           └── page.js  # Acessível via /posts/1, /posts/2, etc.
 ```
 
-## 📊 Organização para Projetos Grandes
+## Organização para Projetos Grandes
 
 Para projetos maiores, considere estas estruturas:
 
@@ -187,9 +187,9 @@ src/
   └── app/
 ```
 
-## 🛠️ Configurações Importantes
+## Configurações Importantes
 
-### 📄 `next.config.js`
+### `next.config.js`
 
 Arquivo de configuração principal:
 
@@ -209,7 +209,7 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
-### 📄 `jsconfig.json` ou `tsconfig.json`
+### `jsconfig.json` ou `tsconfig.json`
 
 Configuração para caminhos absolutos:
 
@@ -226,7 +226,7 @@ Configuração para caminhos absolutos:
 }
 ```
 
-## 💡 Dicas e Boas Práticas
+## Dicas e Boas Práticas
 
 1. **Mantenha a lógica de negócio separada**: Use a pasta `lib/` ou `services/` para isolá-la
 2. **Organize componentes por domínio**: Agrupe componentes relacionados em subpastas
@@ -235,13 +235,13 @@ Configuração para caminhos absolutos:
 5. **Documente decisões**: Adicione um README.md em pastas importantes explicando a estrutura
 6. **Use co-localização**: Mantenha arquivos relacionados (teste, estilo, componente) próximos
 
-## 🔍 Recursos Adicionais
+## Recursos Adicionais
 
 - [Documentação oficial de estrutura de diretórios](https://nextjs.org/docs/getting-started/project-structure)
 - [Exemplos de estrutura de projetos Next.js](https://github.com/vercel/next.js/tree/canary/examples)
 
 ---
 
-[🔙 Voltar ao índice principal](../README.md)
+[Voltar ao índice principal](../README.md)
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/> 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00A0D2&height=120&section=footer"/>
